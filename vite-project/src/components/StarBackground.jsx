@@ -11,6 +11,15 @@ export const StarBackground = () => {
     useEffect(()=>{
         generateStars();
         generateMeteors();
+
+        const handleResize=()=>{
+            generateStars();
+        };
+        
+        window.addEventListener('resize',handleResize);
+
+
+        return ()=>window.removeEventListener("resize",handleResize)
     },[]);
 
     const generateStars=()=>{
@@ -50,6 +59,8 @@ for(let i=0; i<numberOfMeteors ;i++){
 setMeteors(newMeteors);
 };
     
+
+
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0 "> 
     {stars.map((star)=>(
