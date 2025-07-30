@@ -1,3 +1,5 @@
+import { Activity, Airplay, Briefcase, Code, Code2, Database, DecimalsArrowRightIcon, DessertIcon, Globe2Icon, GlobeLock, Icon, LucideAngry, Paintbrush2Icon, PaintBucketIcon, Star, User, User2 } from "lucide-react";
+
 export const AboutSection = () => {
     return ( 
         <section id="about" className="py-24 px-4 relative">
@@ -30,14 +32,53 @@ export const AboutSection = () => {
 </div>
     </div>
     <div className="grid grid-cols-1 gap-6">
-<div className="gradient-border p-6 card-hover bg-primary/10">
+<div className="gradient-border p-2 card-hover bg-primary/10">
     <div className="flex items-start gap-4">
-        <div className="p-3 rounded-full bg-primary/10"></div>
+        <div className="p-2 rounded-full bg-primary/10">
+        <Code2 className=" text-purple-500 w-5 h-5 flex items-center justify-center rounded-full animate-bounce hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 shadow-purple-500/50" />
+        </div>
+<div className="text-left ">
+    <h4 className="font-semibold text-lg">Web Development</h4>
+    <p className="text-muted-foreground">
+        Web developer,with extensive knowledge and years of experience,working in web technologies
+    </p>
+</div>
     </div>
 </div>
-<div className="gradient-border p-6 card-hover bg-primary/10"></div>
-<div className="gradient-border p-6 card-hover bg-primary/10"></div>
-<div className="gradient-border p-6 card-hover bg-primary/10"></div>
+
+
+<div className="gradient-border p-2 card-hover bg-primary/10">
+    <div className="flex items-start gap-4">
+        <div className="p-2 rounded-full bg-primary/10">
+        <User2 className=" text-purple-500 w-5 h-5 flex items-center justify-center rounded-full animate-bounce hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 shadow-purple-500/50" />
+        </div>
+<div className="text-left ">
+    <h4 className="font-semibold text-lg">Ui/Ux Design</h4>
+    <p className="text-muted-foreground">
+        Ui/Ux design,delivering quality work. Fluent in designing
+    </p>
+</div>
+
+    </div>
+</div>
+
+<div className="gradient-border p-2 card-hover bg-primary/10">
+    <div className="flex items-start gap-4">
+        <div className="p-2 rounded-full bg-primary/10">
+        <Database className=" text-purple-500 w-5 h-5 flex items-center justify-center rounded-full animate-bounce hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 shadow-purple-500/50" />
+        </div>
+        <div className="text-left ">
+    <h4 className="font-semibold text-lg">Databases Development</h4>
+    <p className="text-muted-foreground">
+       implementing databases with Microsoft Access platform and SQL Server Ability to produce software under Windows with C#
+    </p>
+</div>
+    </div>
+</div>
+
+
+
+
 
     </div>
    
