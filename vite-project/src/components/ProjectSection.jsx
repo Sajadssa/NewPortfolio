@@ -1,10 +1,15 @@
+
+import OnlineTicket from "../assets/images/Online_Ticket.png";
+import portfolio from "../assets/images/portfolio.png";
+import attary from "../assets/images/Attary.png";
+import ipams from "../assets/images/IPAMS.png";
 const projects=[
     {
 
         id:1,
         title:"Portfolio",
         description:"A project that I made using ReactJS",
-        image:"/vite-project/src/assets/images/Screenshot 2025-08-06 190411.png",
+        image:portfolio,
         tags:["ReactJS","TailwindCSS","ViteJS"],
         link:"",
         github:"https://github.com/Sajadssa/NewPortfolio.git"
@@ -14,7 +19,7 @@ const projects=[
         id:2,
         title:"Attary",
         description:"A project about a web application that I made using javascript",
-        image:"/vite-project/src/assets/images/Screenshot 2025-08-06 191151.png",
+        image:attary,
         tags:["HTML/CSS","Javascript","VueJS"],
         link:"https://pharmacology2022.netlify.app/",
         github:"https://github.com/Sajadssa/pharmacology.git"
@@ -25,29 +30,20 @@ const projects=[
         id:3,
         title:"online_ticket_purchase",
         description:"A project about a website that buy tickets online and simulation Wallet",
-        image:"/vite-project/src/assets/images/Screenshot 2025-08-06 191151.png",
+        image:OnlineTicket,
         tags:["PHP","Hack","JavaScript","MySQL"],
         link:"Need to Apache Sever",
         github:"https://github.com/Sajadssa/online_ticket_purchase.git"
     },
-{
 
-        id:4,
-        title:"Language_Schools",
-        description:"A project about language schools that user can learn different languages",
-        image:"/vite-project/src/assets/images/Online_Ticket.png",
-        tags:["PHP","JavaScript","MySQL"],
-        link:"Need to Apache Sever",
-        github:"https://github.com/Sajadssa/Language_Schools.git"
-    },
     {
 
-        id:5,
-        title:"Language_Schools",
-        description:"A project about language schools that user can learn different languages",
-        image:"/vite-project/src/assets/images/IPAMS.png",
+        id:4,
+        title:"Intelligent-Patient-Admission-Management-System",
+        description:"A project about a system that helps doctors to admit patients and manage their ",
+        image:ipams,
         tags:["C#","SQL Server",".NET Framework"],
-        link:"Need to Run SQL Server",
+        link:"Need to Run SQL Server ",
         github:"https://github.com/Sajadssa/Intelligent-Patient-Admission-Management-System.git"
     },
     
@@ -58,8 +54,38 @@ const projects=[
 
 export const ProjectSection=()=>{
     return(
-        <section>
-            <h1>Project Section</h1>
+        <section id="projects" className="py-24 px-4 relative">
+<div className="container mx-auto max-w-5xl">
+
+</div>
+
+
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Featured <span className="text-purple-500">Projects</span></h2>
+
+            <p className="text-center text-muted-foreground  mb-12 max-w-2xl mx-auto">
+                I have worked on many projects in my career, and I'm proud to show you some of them. These projects showcase my skills in various technologies and demonstrate my ability to solve complex problems.
+            </p>
+
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {projects.map((project,key)=>(
+<div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs shadow-neutral-800 card-hover">
+<div className="h-48 overflow-hidden">
+<img
+ src={project.image}
+alt={project.title}
+className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+</div>
+<div className="p-6">
+<div></div>
+</div>
+
+
+
+</div>
+
+                ))}
+            </div>
         </section>
     )
 }
