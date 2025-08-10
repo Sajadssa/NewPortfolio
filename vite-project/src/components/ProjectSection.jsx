@@ -43,7 +43,7 @@ const projects = [
 
         id: 4,
         title: "Medical Integrated Management System",
-        description: "A project about a system that helps doctors to admit patients and manage their ",
+        description: "A project about a system that helps doctors to admit patients and manage their patients",
         image: ipams,
         tags: ["C#", "SQL Server", ".NET Framework"],
         link: "Need to Run SQL Server ",
@@ -90,17 +90,17 @@ export const ProjectSection = () => {
             </p>
 
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map((project, key) => (
-                    <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs ">
-                        <div className="h-48 overflow-hidden">
+                    <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs border ">
+                        <div className="h-40 overflow-hidden">
                             <img
                                 src={project.image}
                                 alt={project.title}
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                         </div>
-                        <div className="p-6">
-                            <div className="flex flex-wrap gap-2 mb-4 items-center justify-center ">
+                        <div className="p-4">
+                            <div className="flex flex-wrap gap-3 mb-4 items-center justify-center ">
                                 {project.tags.map((tag) => (
                                     <span className="px-2 py-1 text-xs font-medium rounded-full bg-secondary text-secondary-foreground ">
 
