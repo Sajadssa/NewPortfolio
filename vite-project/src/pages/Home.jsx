@@ -5,6 +5,8 @@ import { HeroSection } from "../components/Herosection";
 import { AboutSection } from "../components/AboutSection";
 import { SkillsSection } from "../components/SkillSection";
 import { ProjectSection } from "../components/ProjectSection";
+import { Contact } from "lucide-react";
+import { ContactSection } from './../components/ContactSection';
 
 
 
@@ -25,6 +27,7 @@ export const Home = () => {
                 <AboutSection />
                 <SkillsSection />
                 <ProjectSection />
+                <ContactSection />
             </main>
 
             {/*Footer */}
