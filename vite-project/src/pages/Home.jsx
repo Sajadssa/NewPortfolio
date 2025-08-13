@@ -7,6 +7,7 @@ import { SkillsSection } from "../components/SkillSection";
 import { ProjectSection } from "../components/ProjectSection";
 import { Contact } from "lucide-react";
 import { ContactSection } from './../components/ContactSection';
+import { FooterSection } from "../components/FooterSection";
 
 
 
@@ -31,7 +32,7 @@ export const Home = () => {
             </main>
 
             {/*Footer */}
-
+<FooterSection />
         </div>
     )
 }

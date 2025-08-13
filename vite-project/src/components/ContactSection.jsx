@@ -1,7 +1,10 @@
 import { Instagram, Linkedin, Mail, MapPin, Phone, Send, TwitchIcon, TwitterIcon, X } from "lucide-react"
 import { cn } from "../lib/utils"
+  import { ToastContainer, toast,Bounce,Slide } from 'react-toastify';
+  
 
 export const ContactSection = () => {
+ const notify = () => toast("Thanks for Sending Message");
     return (
         <section id="contact" className="py-24 px-4 lg:px-24 relative bg-secondary/30 ">
             <div className="container mx-auto max-w-5xl ">
@@ -54,13 +57,27 @@ className="w-full px-4 py-3 rounded-md border border-input bg-background focus:o
 
     </div>
 
-    <button type="submit" className={cn("cosmic-button bg-purple-500 w-full flex items-center justify-center text-white gap-2")}>
-        <Send size={16} />
+    <button type="submit" className={cn("cosmic-button bg-purple-500 w-full flex items-center justify-center text-white gap-2")} onClick={notify}>
+        <Send size={16}  />
+         <ToastContainer 
+         position="top-right"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick={false}
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="dark"
+transition={Slide}
+
+  />
         Send Message
     </button>
 </form>
 </div>
-<div className="space-y-8 shadow-xs bg-card p-8 rounded-lg shadow-xs">
+<div className="space-y-8 shadow-xs bg-card p-8 rounded-lg">
  
     <h3 className="text-2xl font-semibold mb-6  ">Contact Information</h3>
     {/* CONTACT INFORMATION */}
