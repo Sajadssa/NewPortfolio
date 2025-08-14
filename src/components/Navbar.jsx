@@ -59,12 +59,12 @@ export const Navbar = () => {
 </div>
 
 {/* Mobile nav */}
-<button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md-hidden lg-hidden text-muted-foreground/80 hover:text-purple-500 transition-colors duration-300 p-2 text-foreground z-50">
+<button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden lg:hidden text-muted-foreground/80 hover:text-purple-500 transition-colors duration-300 p-2 text-foreground z-50">
   {/* aria-label={isMenuOpen ? "Close Menu" : "Open Menu"} */}
   {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
 </button>
 
-<div className={cn("fixed inset-0 bg-background/95 backdrop-blur-md z-40  flex flex-col items-center justify-center  ","transition-all duration-300 md:hidden",isMenuOpen ? "opacity-100 pointer-events-auto":"opacity-0 pointer-events-none")}>
+<div className={cn("fixed w-full h-screen top-0 left-0 bg-background/95 backdrop-blur-md z-40  flex flex-col items-center justify-center  ","transition-all duration-300 md:hidden",isMenuOpen ? "opacity-100 pointer-events-auto":"opacity-0 pointer-events-none")}>
 <div className="flex flex-col space-y-8 text-xl">
   
 {navItems.map((item,key)=>(
