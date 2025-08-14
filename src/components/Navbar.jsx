@@ -47,7 +47,7 @@ export const Navbar = () => {
 </a>
 
 {/* Desktop nav */}
-<div className="hidden md:flex space-x-8">
+<div className="hidden md:flex flex-1/2 justify-center lg:space-x-12 space-x-8">
 
 {navItems.map((item,key)=>(
   <a key={key} href={item.href} className="text-foreground/80 hover:text-purple-500 transition-colors duration-300">
