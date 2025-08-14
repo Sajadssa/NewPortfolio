@@ -9,6 +9,10 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+   "engines": {
+    "node": ">=18.0.0"
+  }
+  ,
   "dependencies": {
     "@radix-ui/react-toast": "^1.2.14",
     "@tailwindcss/vite": "^4.1.11",
