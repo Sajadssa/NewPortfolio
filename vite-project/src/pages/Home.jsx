@@ -5,7 +5,6 @@ import { HeroSection } from "../components/Herosection";
 import { AboutSection } from "../components/AboutSection";
 import { SkillsSection } from "../components/SkillSection";
 import { ProjectSection } from "../components/ProjectSection";
-import { Contact } from "lucide-react";
 import { ContactSection } from './../components/ContactSection';
 import { FooterSection } from "../components/FooterSection";
 

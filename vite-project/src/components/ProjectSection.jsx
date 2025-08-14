@@ -64,7 +64,7 @@ const projects = [
 
         id: 6,
         title: "Social Media Clone",
-        description: "A project about a system that helps doctors to admit patients and manage their ",
+        description: "A project about social media clone using VueJS",
         image: social,
         tags: ["HTML/CSS", "Javascript", "VueJS"],
         link: "#",
