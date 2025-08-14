@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 
+
 const navItems=[
   {name:"Home", href: "#hero"},
   {name:"About",href: "#about"},
@@ -38,7 +39,6 @@ export const Navbar = () => {
 <span className="relative z-10">
 <span className="text-glow text-foreground">SSA</span>
 <span className="text-glow text-purple-500">
-
 {" "} Portfolio
 </span>
 
@@ -47,7 +47,7 @@ export const Navbar = () => {
 </a>
 
 {/* Desktop nav */}
-<div className="hidden md:flex space-x-8">
+<div className="hidden md:flex flex-4/5 justify-center lg:space-x-12 space-x-8 items-center mr-25">
 
 {navItems.map((item,key)=>(
   <a key={key} href={item.href} className="text-foreground/80 hover:text-purple-500 transition-colors duration-300">
