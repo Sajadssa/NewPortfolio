@@ -90,7 +90,7 @@ transition={Slide}
     </div>
     <div>
     <h4 className="font-medium flex">Email</h4> 
-    <a href="mailto:sajadsaeediazad0007@gmail.com" className="text-muted-foreground text-sm hover:text-purple-500 transition-colors">sajadsaeediazad0007@gmail.com
+    <a href="mailto:sajadsaeediazad0007@gmail.com" class="text-muted-foreground text-xs md:text-sm text-wrap hover:text-purple-500 transition-colors">sajadsaeediazad0007@gmail.com
         </a>   
     </div>
 
